@@ -1,0 +1,207 @@
+
+/*
+ Colours
+ Orange : #DB6F35
+ Pink: #F84C80 RGB(248, 76, 128)
+ LightBlue: #7AC6DB RGB(122, 198, 219)
+ Lavender: #8497BE RGB(132, 151, 190)
+ #313340; dark blue/grey
+ */
+
+@font-face {
+	font-family: 'stmarie';
+	src: url('../fonts/stmarie.otf');
+}
+
+@font-face {
+	font-family: 'bebasneue';
+	src: url('../fonts/BebasNeue.otf');
+}
+
+@font-face {
+	font-family:'gothamnights';
+	src: url('../fonts/gotham_nights/gotham_nights.otf');
+	}
+
+@font-face {
+  font-family:'sunrise';
+  src: url('../fonts/theleagueof-blackout/Blackout Sunrise.ttf');
+}
+
+@font-face {
+  font-family: 'chunk';
+  src: url('../fonts/theleagueof-chunk/Chunk.otf');
+}
+
+@font-face {
+  font-family: 'spartan';
+  src: url('../fonts/league-spartan-master/LeagueSpartan-Bold.otf');
+}
+
+@font-face {
+  font-family: 'nevis';
+  src: url('../fonts/nevis/nevis.ttf');
+}
+
+@font-face {
+  font-family: 'roboto-black';
+  src: url('../fonts/roboto/Roboto-medium.ttf');
+}
+
+/*h2 {
+  font-family: 'sunrise';
+}
+p, span, button, li {
+  font-family: 'roboto-black';
+}
+h1, h4 {
+  font-family: 'spartan';
+}*/
+
+
+/*NAVIGATION*/
+
+nav {
+  background-color: #313340;
+  width: 100%;
+  height: 40px;
+  z-index: -999;
+}
+
+nav li a{
+	font-family: 'bebasneue';
+	letter-spacing: 5px;
+  color: white;
+}
+
+nav li a:hover {
+	background-color: white;
+	color: black;
+	transition: .2s ease-in-out;
+	border-radius: 10px;
+}
+
+#current a:hover {
+	background-color: #DB6F35;
+}
+
+
+#ppIcon img {
+	position: absolute;
+	top: 8px;
+	left: 92%;
+	width:64px;
+	height: 64px;
+	z-index: 999;
+	animation-name: shake;
+	animation-delay: 1s;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+	0% {
+		transform: rotate(0deg);
+	}
+	3% {
+		transform: rotate(15deg);
+	}
+	6% {
+		transform: rotate(-15deg);
+	}
+	9% {
+		transform: rotate(7.5deg);
+	}
+	12% {
+		transform: rotate(-7.5deg);
+	}
+	15% {
+		transform: rotate(3.75deg);
+	}
+	18% {
+		transform: rotate(-3.75deg);
+	}
+	21% {
+		transform: rotate(0deg);
+	}
+	80% {
+		transform: rotate(0deg);
+	}
+	90% {
+		transform: rotate(360deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
+.line {
+  height: 2px;
+  background: #DB6F35;
+  position: absolute:
+  top: 0px;
+  box-shadow: 0px -3px 3px #DB6F35;
+  animation-name: slidein;
+  animation-direction: normal;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slidein {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+
+/*SOCIAL ICONS*/
+
+#socialIcons li {
+  display: inline;
+  text-decoration: none;
+  color: black;
+}
+
+.middlePadding {
+  padding: 0 25px
+}
+
+#socialIcons {
+  margin-top:30px;
+  padding-left: 0px;
+  text-align: center;
+}
+
+#socialIcons img {
+  width: 32px;
+  height: 32px;
+  transition: .5s ease-in-out;
+}
+
+#socialIcons img:hover {
+  background-color: orange;
+  border-radius: 52%;
+  border-color: orange;
+  transition: 1s ease-in-out;
+  transform: rotate(360deg); /* Equal to rotateZ(45deg) */
+}
+
+#socialIcons img::before {
+  transform: scale(0);
+  transition: .5s ease-in-out;
+  transform: rotate(0deg); /* Equal to rotateZ(45deg) */
+
+}
+
+li:hover:before {
+  transform: scale(1);
+}
+
+.dateStamp {
+  margin-top: 10px;
+  text-align: center;
+  color: white;
+}
