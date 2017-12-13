@@ -1,0 +1,61 @@
+body {
+font-family: 'stmarie';
+height: 100%;
+background-color: #2B2B2B; 
+}
+
+h3 {
+  font-family: 'bebasneue';
+  letter-spacing: 5px;
+}
+
+
+ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.albumCat li {
+  margin-bottom: 30px;
+}
+
+.albumCat li:hover {
+  border-left: 10px inset #DB6F35;
+  border-right: 10px outset #DB6F35;
+}
+
+.albumCat {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  border-bottom: 1px solid lightblue;
+}
+
+.albumCat a {
+  color: white;
+  text-decoration: none;
+}
+
+.albumCat a:hover {
+  color: #DB6F35;
+}
+
+.albumImages img {
+  width: 100%;
+  height: 100%;
+  border: 10px solid white;
+}
+
+.categories {
+  color: white;
+}
+
+.categories:hover {
+  color: #DB6F35;
+  cursor: pointer;
+}
+
+.inactive:hover {
+  color: white;
+  cursor: default;
+}
